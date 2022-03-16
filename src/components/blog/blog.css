@@ -1,0 +1,104 @@
+.blog{
+    display: flex;
+    flex-direction: column;
+}
+
+ .blog-heading{
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   margin-bottom: 5rem;  
+   text-align: left;
+}
+.blog-heading h1{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    
+}
+.blog-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.blog-img-sec1{
+    flex: 0.75;
+    display: flex;
+    margin-right: 2rem;
+    height: 100%;
+    width: 100%;
+
+}
+.blog-img-sec1 .blogui-text-sec1 h3{
+    margin-bottom: 18rem;
+}
+.blog-img-sec2{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+} 
+@media screen and (max-width:1350px){
+    .blog-img-sec1 .blogui-text-sec1 h3{
+        margin-bottom: 22rem;
+    }
+}
+@media screen and (max-width:1000px){
+    .blog-heading h1{
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 65px;
+        letter-spacing: -0.04em;
+    }
+    .blog-img{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .blog-img-sec1{
+        margin-top: 3rem;
+    }
+    .blog-img-sec1 .blogui-text-sec1 h3{
+        margin-bottom: 5rem;
+    }
+    
+}
+@media screen and (max-width:550px) {
+    .blog-heading h1{
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 50px;
+        letter-spacing: -0.04em;
+    }
+    .blog-heading{
+        margin-bottom: 2rem;  
+     }
+    .blog-img-sec1 .blogui-img img{
+        height: 120px;
+    }
+    .blog-img-sec1 .blogui-text-sec1 h3{
+        margin-bottom: 3rem;
+    }
+
+     .blog-img-sec2{
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+    } 
+    
+}
+/* p tag small
+font-family: 'Gilroy-Medium';
+font-size: 12px;
+line-height: 14px;
+
+color: #FFFFFF; */
+
+/* h4 tag company
+font-family: 'Gilroy-Bold';
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+/* color: #FFFFFF; */ 

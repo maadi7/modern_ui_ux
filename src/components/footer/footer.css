@@ -1,0 +1,104 @@
+
+.footer{
+    background: var(--color-footer);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+.footer-heading h1{
+    font-weight: 800;
+    font-size: 62px;
+    max-width: 900px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+.footer-heading button{
+    width: 200px;
+    height: 80px;
+    font-size: 15px;
+    font-weight: 900;
+    border: 2px solid white;
+    margin-bottom: 2rem;
+    line-height: 21px;
+    background: none;
+    color: white;
+    margin-top: 8rem;
+    cursor: pointer;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.footer-container div{
+    margin: 0 4rem;
+}
+.footer-container p{ 
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin: 2rem 0 0 0;
+    cursor: pointer;
+}
+.footer-container h4{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+}
+@media screen and (max-width: 1190px) {
+    .footer-container{
+        flex-direction: column;
+        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .footer-container div{
+        margin: 0 ;
+    }
+    .footer-container h4 {
+        margin-top: 4rem;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    .footer-heading h1{
+        font-size: 52px;
+        line-height: 60px;
+        max-width: none;
+    }
+    .footer-heading button{     
+        line-height: 21px;
+        background: none;
+        margin-top: 5rem;
+  
+    }
+    
+}
+@media screen and (max-width: 550px) {
+    .footer-heading h1{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .footer-heading button{
+        width: 150px;
+        height: 60px;
+        font-size: 12px;
+        word-spacing: .1rem;
+        margin-bottom: 2rem;
+        line-height: 18px;
+        margin-top: 3rem;
+   
+    }
+    
+}

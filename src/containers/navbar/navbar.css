@@ -1,0 +1,123 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    
+}
+.navbar-logo{
+    display: flex;
+    width: 80px;
+    height: 22px;
+    justify-content: flex-start;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.navbar-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-links{
+    display: flex;
+    flex: 1;
+    margin: 0rem 1rem;
+}
+.navbar-links p{
+    color: white;
+    max-width: fit-content;
+    cursor: pointer;
+}
+.navbar-btn-in{
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0.5rem;
+    width: 154px;
+    height: 56px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+   
+}
+
+.navbar-links p{
+    color: white;
+    margin: 0rem 1rem;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.navbar-btn-up{
+    padding: 0.5rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0.5rem;
+    width: 154px;
+    height: 56px;
+    background: #FF4820;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.navbar__smallscreen{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+
+}
+.navbar__smallscreen-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #031B34;
+    border-radius: 5px;
+    min-width: 210px;
+
+}
+
+.navbar__smallscreen-links p{
+    color: white;
+    margin: 0.5rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+.navbar__smallscreen-btn{
+    display: none;
+
+
+}
+@media screen and (max-width: 1200px){
+    .navbar__smallscreen{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .navbar-btn{
+      position: absolute;
+      top: 50px;
+      right: 150px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .navbar-btn{
+        display: none;
+    }
+    .navbar__smallscreen-btn{
+        display: block;
+        font-size: xx-small;
+    }
+}
